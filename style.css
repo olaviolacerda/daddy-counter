@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff6600;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover,
+button:focus {
+  background-color: #e55b00;
+}
+
+#count {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+#daddy-image-container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.daddy-image {
+  width: 150px;
+  height: auto;
+  animation: pop 0.8s ease-out forwards;
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0) scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px) scale(1);
+  }
+}
